@@ -1,0 +1,28 @@
+[project]
+name = "jekacode-ai-engineering"
+version = "1.0.0"
+description = "Jekacode 12-week AI Engineering programme for beginners"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Jekacode", email = "hello@jekacode.africa" }]
+dependencies = [
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.0",
+    "google-genai>=1.0.0",
+    "ipykernel>=6.29.0",
+    "notebook>=7.2.0",
+    "streamlit>=1.38.0",
+    "pypdf>=5.0.0",
+    "gradio>=5.0.0,<6.0",
+    "huggingface_hub>=0.25.0",
+    "beautifulsoup4>=4.12.0",
+    "flask>=3.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["jekacode"]

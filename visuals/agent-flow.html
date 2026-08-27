@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agent flow — Jekacode</title>
+  <style>
+    :root { --navy:#03045E; --green:#16D365; }
+    body { margin:0; font-family:Arial,sans-serif; background:#F4F6FB; }
+    header { background:var(--navy); color:#fff; padding:28px 32px; }
+    .sub { color:var(--green); font-size:12px; letter-spacing:2px; }
+    main { max-width:800px; margin:0 auto; padding:24px 16px; }
+    .pair { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    @media (max-width:700px){ .pair { grid-template-columns:1fr; } }
+    .card { background:#fff; border-radius:14px; padding:18px; }
+    h2 { color:var(--navy); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="sub">WEEK 7 CLASS 1</div>
+    <h1>Chatbot vs agent</h1>
+  </header>
+  <main>
+    <div class="pair">
+      <div class="card">
+        <h2>Chatbot</h2>
+        <p>Ask → get answer.</p>
+        <p>Like texting a clever cousin.</p>
+      </div>
+      <div class="card">
+        <h2>Agent</h2>
+        <p>Goal → think → <strong>use a tool</strong> → maybe another action → result.</p>
+        <p>Like a cousin who can open your notes app and then write a report.</p>
+      </div>
+    </div>
+    <p>This cohort: <strong>one agent, one or two tools</strong>. No multi-agent drama yet.</p>
+  </main>
+</body>
+</html>

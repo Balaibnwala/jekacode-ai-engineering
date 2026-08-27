@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jekacode Chat</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <img src="/logo.png" alt="Jekacode" class="logo" />
+      <div>
+        <p class="eyebrow">JEKACODE AI ENGINEERING</p>
+        <h1>Study chat</h1>
+        <p class="hint">HTML + CSS + JavaScript in the browser. Python only on the server.</p>
+      </div>
+    </header>
+
+    <label class="picker">
+      Model
+      <select id="provider">
+        <option value="gemini">Gemini (Google)</option>
+        <option value="grok">Grok (xAI)</option>
+        <option value="deepseek">DeepSeek</option>
+        <option value="ollama">Ollama (laptop)</option>
+      </select>
+    </label>
+
+    <main id="log" class="log" aria-live="polite"></main>
+
+    <form id="form" class="composer">
+      <input id="input" type="text" autocomplete="off" placeholder="Ask anything… e.g. What is an API?" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

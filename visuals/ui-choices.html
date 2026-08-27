@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UI choices — Jekacode</title>
+  <style>
+    :root { --navy:#03045E; --green:#16D365; }
+    body { margin:0; font-family:Arial,sans-serif; background:#F4F6FB; }
+    header { background:var(--navy); color:#fff; padding:28px 32px; }
+    .sub { color:var(--green); font-size:12px; letter-spacing:2px; }
+    main { max-width:1000px; margin:0 auto; padding:24px 16px 64px; }
+    table { width:100%; border-collapse:collapse; background:#fff; border-radius:12px; overflow:hidden; }
+    th { background:var(--navy); color:#fff; text-align:left; padding:12px; }
+    td { padding:12px; border-bottom:1px solid #e8ebf4; vertical-align:top; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="sub">WEEK 4 CLASS 1</div>
+    <h1>Three ways to give AI a screen</h1>
+  </header>
+  <main>
+    <table>
+      <tr><th>Tool</th><th>Feel</th><th>Trade-off</th><th>Use when</th></tr>
+      <tr>
+        <td><strong>Gradio</strong></td>
+        <td>One Python file, instant demo (classic LLM courses love this)</td>
+        <td>Looks like a lab prototype. Fastest.</td>
+        <td>Class 2 wow, Hugging Face Spaces</td>
+      </tr>
+      <tr>
+        <td><strong>Streamlit</strong></td>
+        <td>Tabs, sliders, sidebar — still Python</td>
+        <td>Easy product. Less control of pixels.</td>
+        <td>Study assistant, business pack</td>
+      </tr>
+      <tr>
+        <td><strong>HTML + CSS + JS</strong></td>
+        <td>Looks like WhatsApp / a real site</td>
+        <td>More files. You learn frontend. Backend is still Python.</td>
+        <td>Portfolio, “I can ship a chat UI”</td>
+      </tr>
+    </table>
+    <p>Jekacode teaches all three. Pick one to submit in Week 4. Stretch: do HTML.</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Latency — Jekacode</title>
+  <style>
+    :root { --navy:#03045E; --green:#16D365; }
+    body { margin:0; font-family:Arial,sans-serif; background:#F4F6FB; }
+    header { background:var(--navy); color:#fff; padding:28px 32px; }
+    .sub { color:var(--green); letter-spacing:2px; font-size:12px; }
+    main { max-width:900px; margin:0 auto; padding:24px 16px 64px; }
+    .bar { background:#fff; border-radius:12px; padding:14px 16px; margin:10px 0; }
+    .track { height:18px; background:#e6e9f2; border-radius:9px; overflow:hidden; }
+    .fill { height:18px; background:var(--green); }
+    .fill.slow { background:#c0392b; }
+    .fill.mid { background:#e67e22; }
+    table { width:100%; border-collapse:collapse; background:#fff; margin-top:18px; }
+    th { background:var(--navy); color:#fff; text-align:left; padding:10px; }
+    td { padding:10px; border-bottom:1px solid #eee; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="sub">WEEK 3 · TESTING</div>
+    <h1>Latency = how long you wait</h1>
+  </header>
+  <main>
+    <p><strong>Latency</strong> is the time from clicking Send to seeing the full answer. We measure it in <strong>ms</strong> (1000 ms = 1 second).</p>
+    <div class="bar">
+      <strong>Gemini Flash</strong> — often a short wait
+      <div class="track"><div class="fill" style="width:28%"></div></div>
+    </div>
+    <div class="bar">
+      <strong>Grok mini</strong> — often similar; depends on network
+      <div class="track"><div class="fill mid" style="width:40%"></div></div>
+    </div>
+    <div class="bar">
+      <strong>DeepSeek</strong> — can be a bit longer from some African ISPs
+      <div class="track"><div class="fill mid" style="width:55%"></div></div>
+    </div>
+    <div class="bar">
+      <strong>Ollama on a school laptop</strong> — your computer is the kitchen
+      <div class="track"><div class="fill slow" style="width:88%"></div></div>
+    </div>
+    <p>These bars are <em>cartoons</em>, not lab results. Your homework is to run <code>ask_timed()</code> and write <em>your</em> numbers.</p>
+    <table>
+      <tr><th>Word</th><th>Meaning</th></tr>
+      <tr><td>TTFT</td><td>Time to first token — first word on screen</td></tr>
+      <tr><td>Timeout</td><td>App stops waiting</td></tr>
+      <tr><td>Cold start</td><td>First local call is slower</td></tr>
+      <tr><td>Hallucination</td><td>Fast or slow, it can still be <em>wrong</em></td></tr>
+      <tr><td>Inconsistency</td><td>Same prompt, different answers</td></tr>
+    </table>
+  </main>
+</body>
+</html>

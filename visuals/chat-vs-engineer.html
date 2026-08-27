@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chatting vs engineering — Jekacode</title>
+  <style>
+    :root { --navy:#03045E; --green:#16D365; }
+    body { margin:0; font-family:Arial,sans-serif; background:#F4F6FB; }
+    header { background:var(--navy); color:#fff; padding:28px 32px; }
+    .sub { color:var(--green); font-size:12px; letter-spacing:2px; }
+    main { max-width:980px; margin:0 auto; padding:28px 16px 64px; }
+    .row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    @media (max-width:800px){ .row { grid-template-columns:1fr; } }
+    .bubble { background:#fff; border-radius:16px; padding:18px; }
+    .weak { border-left:6px solid #c0392b; }
+    .strong { border-left:6px solid var(--green); }
+    pre { white-space:pre-wrap; background:#03045E; color:#16D365; padding:14px; border-radius:10px; }
+    ol { line-height:1.6; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="sub">WEEK 1 CLASS 2 · WEEK 5 CLASS 1</div>
+    <h1>How people normally ask AI — and how we engineer it</h1>
+  </header>
+  <main>
+    <div class="row">
+      <div class="bubble weak">
+        <h2>Normal chat (weak)</h2>
+        <pre>write about python</pre>
+        <p>Works a bit. Vague. Random length. Maybe American examples. Maybe invents a library that does not exist.</p>
+      </div>
+      <div class="bubble strong">
+        <h2>Engineered prompt (strong)</h2>
+        <pre>You are a Python instructor for JSS2 in Lagos.
+Explain Python using a school result sheet.
+Under 120 words. Simple English.
+Do not invent library names.</pre>
+        <p>Role + place + example + limit + safety. This is prompt engineering.</p>
+      </div>
+    </div>
+    <h2>How an AI engineer goes further</h2>
+    <ol>
+      <li>Keep the prompt in <strong>code</strong> (so the shop app always uses it).</li>
+      <li>Add a <strong>system</strong> message (job description) separate from the user’s question.</li>
+      <li><strong>Chain</strong> steps: first list problems, then write one caption.</li>
+      <li>Ground answers in a <strong>document</strong> (RAG, Week 6) so it stops guessing school rules.</li>
+      <li><strong>Test</strong> bad input (Week 11). ChatGPT-the-website will not do that for your users.</li>
+    </ol>
+    <p><strong>User story:</strong> As a suya-spot owner, I want one form that always returns Instagram + email in my tone, not a new chat I have to babysit every morning.</p>
+  </main>
+</body>
+</html>

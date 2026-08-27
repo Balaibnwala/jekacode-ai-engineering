@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RAG flow — Jekacode</title>
+  <style>
+    :root { --navy:#03045E; --green:#16D365; }
+    body { margin:0; font-family:Arial,sans-serif; background:#F4F6FB; }
+    header { background:var(--navy); color:#fff; padding:28px 32px; }
+    .sub { color:var(--green); font-size:12px; letter-spacing:2px; }
+    main { max-width:720px; margin:0 auto; padding:28px 16px; }
+    .step { background:#fff; border-left:6px solid var(--green); padding:14px 18px; margin:12px 0; border-radius:0 12px 12px 0; }
+    .n { color:var(--navy); font-weight:bold; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="sub">WEEK 6 CLASS 1</div>
+    <h1>Give the student the textbook (RAG)</h1>
+  </header>
+  <main>
+    <p>Gemini is a smart student in an exam with <em>no</em> school handbook. RAG puts the handbook on the desk.</p>
+    <div class="step"><span class="n">1.</span> User asks: “How do I get a transcript?”</div>
+    <div class="step"><span class="n">2.</span> Your code splits the handbook into chunks (pages / headings).</div>
+    <div class="step"><span class="n">3.</span> Find chunks that share words with the question (later: meaning search).</div>
+    <div class="step"><span class="n">4.</span> Send <strong>those chunks + the question</strong> to the model.</div>
+    <div class="step"><span class="n">5.</span> Model answers. If the text is missing, it must say it cannot find it.</div>
+  </main>
+</body>
+</html>

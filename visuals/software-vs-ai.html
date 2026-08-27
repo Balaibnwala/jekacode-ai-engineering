@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Software Engineer vs AI Engineer — Jekacode</title>
+  <style>
+    :root { --navy:#03045E; --green:#16D365; }
+    body { margin:0; font-family:Arial,sans-serif; background:#F4F6FB; }
+    header { background:var(--navy); color:#fff; padding:28px 32px; }
+    .sub { color:var(--green); letter-spacing:2px; font-size:12px; }
+    main { max-width:1000px; margin:0 auto; padding:28px 16px 64px; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    @media (max-width:800px){ .grid { grid-template-columns:1fr; } }
+    .col { background:#fff; border-radius:16px; padding:20px; }
+    .col h2 { color:var(--navy); margin-top:0; }
+    .col.right { border-top:6px solid var(--green); }
+    .col.left { border-top:6px solid var(--navy); }
+    li { margin:10px 0; }
+    .trade { background:var(--navy); color:#fff; border-radius:16px; padding:20px; margin-top:24px; }
+    .trade h2 { color:var(--green); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="sub">JEKACODE · TRADE-OFFS</div>
+    <h1>Normal software engineering vs AI engineering</h1>
+  </header>
+  <main>
+    <div class="grid">
+      <div class="col left">
+        <h2>Normal software engineer</h2>
+        <ul>
+          <li><strong>Input:</strong> exact rules. If score ≥ 50, print Pass.</li>
+          <li><strong>Output:</strong> the same every time (mostly).</li>
+          <li><strong>Bugs:</strong> you can often point at one line.</li>
+          <li><strong>Tests:</strong> 2 + 2 must be 4.</li>
+          <li><strong>Example:</strong> student analyzer in Week 2.</li>
+        </ul>
+      </div>
+      <div class="col right">
+        <h2>AI engineer</h2>
+        <ul>
+          <li><strong>Input:</strong> messy language, documents, goals.</li>
+          <li><strong>Output:</strong> useful, but not identical every time.</li>
+          <li><strong>Bugs:</strong> hallucination, leaked secrets, ignored rules.</li>
+          <li><strong>Tests:</strong> try normal / bad / confusing input (Week 11).</li>
+          <li><strong>Example:</strong> study assistant that explains photosynthesis.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="trade">
+      <h2>The honest trade-off</h2>
+      <p>AI is wonderful when the job is language: explain, draft, search a handbook, classify an email.</p>
+      <p>Ordinary code is better when the job is money, marks, or “must be exact”: fees, exam scores, BVN, doses.</p>
+      <p><strong>Jekacode rule:</strong> use Python for the rules. Use Gemini / Ollama for the words. Combine them. That mix <em>is</em> AI engineering.</p>
+    </div>
+  </main>
+</body>
+</html>

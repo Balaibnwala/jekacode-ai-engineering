@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>API architecture — Jekacode</title>
+  <style>
+    :root { --navy:#03045E; --green:#16D365; }
+    body { margin:0; font-family:Arial,sans-serif; background:#0b1020; color:#fff; }
+    header { padding:28px 32px; border-bottom:1px solid #1c2a55; }
+    .sub { color:var(--green); letter-spacing:2px; font-size:12px; }
+    main { max-width:900px; margin:0 auto; padding:32px 16px; }
+    .stack { display:flex; flex-direction:column; gap:0; align-items:center; }
+    .node { width:min(100%,420px); background:var(--navy); border:2px solid var(--green); border-radius:14px; padding:16px; text-align:center; }
+    .v { color:var(--green); font-size:22px; margin:6px 0; }
+    p { color:#d7deea; line-height:1.55; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="sub">WEEK 3 CLASS 1</div>
+    <h1>The waiter picture (API)</h1>
+  </header>
+  <main>
+    <div class="stack">
+      <div class="node"><strong>Your Python or HTML app</strong><br/>the customer at the table</div>
+      <div class="v">↓ request + secret key</div>
+      <div class="node"><strong>API</strong><br/>the waiter who will not let strangers into the kitchen</div>
+      <div class="v">↓</div>
+      <div class="node"><strong>Ollama / Gemini / DeepSeek / Hugging Face</strong><br/>the kitchen</div>
+      <div class="v">↓ response text</div>
+      <div class="node"><strong>Screen</strong><br/>notebook, Gradio, Streamlit, or chat bubbles</div>
+    </div>
+    <p>Ollama kitchen is on <code>localhost</code> (your laptop). Gemini kitchen is on Google’s computers. Same picture, different address.</p>
+  </main>
+</body>
+</html>

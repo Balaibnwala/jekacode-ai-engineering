@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How AI works — Jekacode</title>
+  <style>
+    :root { --navy:#03045E; --green:#16D365; --ink:#1b1f2a; --paper:#F4F6FB; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Arial, sans-serif; background: var(--paper); color: var(--ink); }
+    header { background: var(--navy); color:#fff; padding:28px 32px; display:flex; gap:20px; align-items:center; }
+    header img { height:48px; background:#fff; border-radius:8px; padding:6px 10px; }
+    h1 { margin:0; font-size:28px; }
+    .sub { color: var(--green); letter-spacing:2px; font-size:12px; margin-bottom:8px; }
+    main { max-width:960px; margin:0 auto; padding:32px 20px 64px; }
+    .flow { display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:center; margin:28px 0; }
+    .box { background: var(--navy); color:#fff; border-radius:14px; padding:16px 18px; min-width:140px; text-align:center; font-weight:bold; }
+    .box small { display:block; font-weight:normal; color:#c8d0e0; margin-top:6px; }
+    .arrow { color: var(--green); font-size:28px; font-weight:bold; }
+    .card { background:#fff; border-radius:14px; padding:20px; margin:18px 0; border-left:6px solid var(--green); }
+    table { width:100%; border-collapse:collapse; background:#fff; border-radius:12px; overflow:hidden; }
+    th { background: var(--navy); color:#fff; text-align:left; padding:12px; }
+    td { padding:12px; border-bottom:1px solid #e6e9f2; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="../assets/jekacode-logo.png" alt="Jekacode" />
+    <div>
+      <div class="sub">JEKACODE AI ENGINEERING · WEEK 1 CLASS 1</div>
+      <h1>How a talking computer works</h1>
+    </div>
+  </header>
+  <main>
+    <p>Imagine a very well-read friend. You send a sentence. They send a sentence back. That friend is an <strong>LLM</strong>.</p>
+    <div class="flow">
+      <div class="box">You type<small>question</small></div>
+      <div class="arrow">→</div>
+      <div class="box">Your app<small>Python / HTML</small></div>
+      <div class="arrow">→</div>
+      <div class="box">API door<small>key in .env</small></div>
+      <div class="arrow">→</div>
+      <div class="box">Model<small>Ollama / Gemini</small></div>
+      <div class="arrow">→</div>
+      <div class="box">Reply<small>on the screen</small></div>
+    </div>
+    <div class="card">
+      <strong>Parameters</strong> are like millions of tiny knobs the model learned from reading. You do not turn them by hand. Training already set them. Your job is to send a clear question and build a useful app around the answer.
+    </div>
+    <table>
+      <tr><th>Word</th><th>Picture in your head</th></tr>
+      <tr><td>AI</td><td>The whole field of “computers doing thinking-like jobs”</td></tr>
+      <tr><td>Machine learning</td><td>Learn from examples instead of only handwritten rules</td></tr>
+      <tr><td>Generative AI</td><td>Makes new text, ideas, quizzes</td></tr>
+      <tr><td>LLM</td><td>The talking model (Gemini, DeepSeek, Llama on Ollama)</td></tr>
+      <tr><td>AI Engineer</td><td>Builds the boxes in the green arrows — not only chats</td></tr>
+    </table>
+  </main>
+</body>
+</html>

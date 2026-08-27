@@ -1,0 +1,44 @@
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+.virtual_documents/
+
+# Tools / OS
+.DS_Store
+.idea/
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# App / data leftovers
+.gradio/
+vector_db/
+*.pkl
+wandb/
+nohup.out
+
+# Student local junk
+projects/**/.venv/
+projects/**/venv/
+projects/**/.env
+projects/**/__pycache__/
+
+# Teacher-only materials — keep on the laptop, not on the public student fork
+teachers/

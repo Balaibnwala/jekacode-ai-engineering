@@ -1,0 +1,28 @@
+{
+  "name": "Jekacode AI Email Assistant",
+  "nodes": [
+    {
+      "parameters": { "path": "jekacode-email", "httpMethod": "POST" },
+      "id": "1",
+      "name": "New Email Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { body: $json.body || $json } }];"
+      },
+      "id": "2",
+      "name": "Get Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [240, 0]
+    }
+  ],
+  "connections": {
+    "New Email Webhook": { "main": [[{ "node": "Get Data", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1" },
+  "notes": "Classroom sketch: webhook trigger then your Gemini/DeepSeek HTTP node. Keep a human review step before any send mail node."
+}
